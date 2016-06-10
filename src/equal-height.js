@@ -2,7 +2,7 @@
 
 import attributelist from './attributelist'
 
-var instances = [],
+let instances = [],
     defaults = {
         minWidth: 768 
     },
