@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Equal Height</title>
+        <style>
+        * {
+            box-sizing: border-box;
+            padding:0;
+            margin:0;
+        }
+        main {
+            width:95%;
+            margin:20px auto;
+            display:block;
+            overflow: hidden;
+        }
+        .box {
+            display:block;
+            width:100%;
+            min-height: 50px;
+            background:grey;
+            margin-bottom:1px;
+        }
+        
+        @media (min-width:380px) {
+            main {
+                position: relative;
+                left:-1px;
+            }
+            .box {
+                float:left;
+                width:24%;
+                margin-left:1%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+		<div class="js-equal">
+			<div class="box">
+				<div style="height:500px"></div>
+			</div>
+			<div class="box"></div>
+			<div class="box"></div>
+			<div class="box"></div>
+		</div>
+		<div class="js-equal">
+			<div class="box">
+				<div style="height:300px"></div>
+			</div>
+			<div class="box"></div>
+			<div class="box"></div>
+			<div class="box"></div>
+		</div>
+    </main>
+        <script src="./js/app.js"></script>
+    </body>
+</html>
